@@ -1,23 +1,76 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   height: 100%;
-  font-family:"Roboto", sans-serif;;
+  font-family: "Roboto", sans-serif;
+  ;
 }
-.header{
+
+.header {
   display: flex;
   justify-content: center;
   padding: 40px 0;
-  background:  #111720;
+  background: #111720;
   color: orange;
 }
 
-.title{
+.title {
   font-size: 32px;
-  color:  #fac650;
+  color: #fac650;
   font-family: "Press Start 2P", cursive;
 }
+
+.game-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  flex-wrap: wrap;
+}
+
+.player-section {
+  width: 400px;
+  background-color: rgb(70, 70, 70);
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 20px;
+  width: 400px;
+  height: 320px;
+
+}
+
+.logo{
+  height: 60px;
+  width: 60px;
+}
+.selection{
+  height: 3px;
+  width: 25px;
+}
+ 
+.player-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.player{
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.game-selections{
+  display: flex;
+  justify-content: center;
+}
+
+
+
