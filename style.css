@@ -131,11 +131,19 @@ body {
 }
 .score-bored{
   background: black;
-  height: 14vh;
+  height: 17vh;
   color: #f2f2f2;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 5px dashed orange;
+}
+#result{
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Press Start 2P", cursive;
+  color: #fac650;
+  margin-bottom: 20px;
 }
 
 
