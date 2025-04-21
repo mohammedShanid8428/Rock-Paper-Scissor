@@ -57,20 +57,22 @@ function playRound(humanChoice, computerChoice) {
       computerScoreUpdate.textContent = computerScore;
   
     }
+    
+//to check if player has won this game//
+    if (humanScore == 5) {
+      resultTxt.textContent = "You Have Won The Game. Your Total Score is " + humanScore + " to " + computerScore + " ,congragulations.";
+      resetGame();
+    }
+    else if (computerScore == 5) {
+      resultTxt.textContent = "You Have LOst The Game. Your Total Score is " + humanScore + " to " + computerScore + " ,Better Luck Next TIme.";
+      resetGame()
+    }
    
   
 }
 
-//to check if player has won this game//
 
-if (humanScore == 5) {
-  resultTxt.textContent = "You Have Won The Game. Your Total Score is" + humanScore + "to" + computerScore + ",congragulations.";
-  resetGame();
-}
-else if (computerScore == 5) {
-  resultTxt.textContent = "You Have LOst The Game. Your Total Score is" + humanScore + "to" + computerScore + ",Better Luck Next TIme.";
-  resetGame()
-}
+
 
 function resetGame() {
   humanScore = 0;
