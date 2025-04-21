@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock Papper Scissors Game</title>
   <link rel="stylesheet" href="./style.css">
   <script src="./script.js"></script>
-  <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet" />
 </head>
+
 <body>
   <!--header-section-->
   <header class="header">
@@ -34,28 +34,29 @@
             <p class="score" id="player-score">Score:0</p>
           </div>
         </div>
-        <div class="game-selections">
-          <div class="game-selection">
-            <p class="game-selectiontext">Rock</p>
-            <img src="./images/rock.png" alt="" class="selection" id="rock">
+        <div class="content-box">
+          <div class="game-selections">
+            <div class="game-selection" id="rock">
+              <p class="game-selectiontext">Rock</p>
+              <img src="./images/rock.png" alt="" class="selection" id="rock">
+            </div>
           </div>
-        </div>
-        <div class="game-selections">
-          <div class="game-selection">
-            <p class="game-selectiontext">Papper</p>
-            <img src="./images/paper.png" alt="" class="selection" id="papper">
+          <div class="game-selections">
+            <div class="game-selection" id="papper">
+              <p class="game-selectiontext">Papper</p>
+              <img src="./images/paper.png" alt="" class="selection" id="papper">
+            </div>
           </div>
-        </div>
-        <div class="game-selections">
-          <div class="game-selection">
-            <p class="game-selectiontext">Scissor</p>
-            <img src="./images/scissor.png" alt="" class="selection" id="scissor">
+          <div class="game-selections">
+            <div class="game-selection" id="scissor">
+              <p class="game-selectiontext">Scissor</p>
+              <img src="./images/scissor.png" alt="" class="selection" id="scissor">
+            </div>
           </div>
         </div>
       </div>
 
       <!--computer-section-->
-    <div class="game-container">
       <div class="player-section">
         <h1 class="player">COMPUTER</h1>
         <div class="player-information">
@@ -63,32 +64,43 @@
             <img src="./images/computer.jpg" alt="" class="logo">
           </div>
           <div class="player-score">
-            <p class="score" id="player-information">Score:0</p>
+            <p class="score" id="computer-score">Score:0</p>
           </div>
         </div>
-        <div class="game-selections">
-          <div class="game-selection">
-            <p class="game-selectiontext">Rock</p>
-            <img src="./images/rock.png" alt="" class="selection" id="rock">
+        <div class="content-box">
+          <div class="game-selections">
+            <div class="game-selection" id="rock">
+              <p class="game-selectiontext">Rock</p>
+              <img src="./images/rock.png" alt="" class="selection" id="rock">
+            </div>
+          </div>
+          <div class="game-selections">
+            <div class="game-selection" id="papper">
+              <p class="game-selectiontext">Papper</p>
+              <img src="./images/paper.png" alt="" class="selection" id="papper">
+            </div>
+          </div>
+          <div class="game-selections">
+            <div class="game-selection" id="scissor">
+              <p class="game-selectiontext">Scissor</p>
+              <img src="./images/scissor.png" alt="" class="selection" id="scissor">
+            </div>
           </div>
         </div>
-        <div class="game-selections">
-          <div class="game-selection">
-            <p class="game-selectiontext">Papper</p>
-            <img src="./images/paper.png" alt="" class="selection" id="papper">
-          </div>
-        </div>
-        <div class="game-selections">
-          <div class="game-selection">
-            <p class="game-selectiontext">Scissor</p>
-            <img src="./images/scissor.png" alt="" class="selection" id="scissor">
-          </div>
-        </div>
+      </div>
+    </div>
+    
+  </section>
+  <section>
+    <div class="score-bored">
+      <div class="score">
+        <p id="result">result</p>
       </div>
     </div>
   </section>
 
 
-  
+
 </body>
+
 </html>
