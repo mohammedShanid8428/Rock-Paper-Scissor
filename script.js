@@ -5,7 +5,7 @@ function getComputerChoice() {
     return "rock"
   }
   else if (choice == 2) {
-    return "papper"
+    return "paper"
   }
   if (choice == 3) {
     return "scissor"
@@ -14,14 +14,14 @@ function getComputerChoice() {
 }
 
 const rockBtn = document.getElementById("rock")
-const papperBtn = document.getElementById("papper")
+const papperBtn = document.getElementById("paper")
 const scissorBtn = document.getElementById("scissor")
 const playerScoreUpdate = document.getElementById("player-score")
 const computerScoreUpdate = document.getElementById("computer-score")
 const resultTxt = document.getElementById("result")
 
 rockBtn.addEventListener("click", () => getHumanChoice("rock"))
-papperBtn.addEventListener("click", () => getHumanChoice("papper"))
+papperBtn.addEventListener("click", () => getHumanChoice("paper"))
 scissorBtn.addEventListener("click", () => getHumanChoice("scissor"))
 
 function getHumanChoice(humanSelection) {
@@ -44,8 +44,8 @@ function playRound(humanChoice, computerChoice) {
     resultTxt.textContent = "It's a Draw";
     highlightBoth(playerBtn, computerBtn, "orange");
   } else if (
-    (humanChoice === "rock" && computerChoice === "papper") ||
-    (humanChoice === "papper" && computerChoice === "scissor") ||
+    (humanChoice === "rock" && computerChoice === "paper") ||
+    (humanChoice === "paper" && computerChoice === "scissor") ||
     (humanChoice === "scissor" && computerChoice === "rock")
   ) {
     resultTxt.textContent = "You Lose this Round";
