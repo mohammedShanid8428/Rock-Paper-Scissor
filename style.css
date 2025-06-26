@@ -29,6 +29,8 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
@@ -86,6 +88,7 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 16px;
+  min-height: 320px;
 }
 
 .player {
@@ -97,16 +100,10 @@ body {
   font-family: "Press Start 2P", cursive;
 }
 
-.game-container {
-  display: flex;
-  justify-content: center;
-}
-
 .game-selections {
   display: flex;
   justify-content: center;
-
-
+  cursor: pointer;
 }
 
 .game-selection {
@@ -141,7 +138,7 @@ body {
   border: 5px dashed black;
 }
 
-.score-bored {
+.score-board {
   background: black;
   height: 17vh;
   color: #f2f2f2;
@@ -172,13 +169,13 @@ body {
   text-align: center;
   font-size: 30px;
   user-select: none;
-  transform: translate(-50%,-50%) scale(1);
-  transition: 0.2 ease-in-out;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.2s ease-in-out;
 
 }
 
 .modal.active{
-  transform: translate(-50%,-50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .modal-title{
@@ -186,11 +183,30 @@ body {
   font-weight: bold;
 }
 
-.btn-restart{
+.btn-restart {
   padding: 10px 20px;
-  margin-top: 25px;
-  margin-bottom: 15px;
+  background-color: orange;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Press Start 2P", cursive;
+}
+.btn-restart:hover {
+  background-color: #fac650;
 }
 .overlay{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.6;
 
+}
+.overlay.active{
+  display: block;
 }
