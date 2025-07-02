@@ -255,7 +255,7 @@ body {
     padding-top: 8px;
     flex: 1;
     height: 73vh;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   .player-section {
