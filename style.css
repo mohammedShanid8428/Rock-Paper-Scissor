@@ -236,62 +236,55 @@ body {
   html, body {
     margin: 0;
     padding: 0;
-    height: 100dvh;
-    overflow: hidden;
+    height: 100%;
+    /* overflow: hidden; */
   }
 
   .header {
-    padding: 18px 4px;
-    text-align: center;
-    border: 4px dashed orange;
+    padding: 25px 3px;
+    height: 10vh;
+    /* height: auto; */
   }
 
   .title {
     font-size: 1rem;
     text-align: center;
-    text-shadow: 0 0 1px orange
-  }
-
-  #game-section{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 4px dashed black;
-    height: calc(100svh - 125px);
-    overflow: hidden;
+    text-shadow: 0px 0px 1px orange
   }
 
   .game-container {
-    flex: 1;
-    display: flex;
     flex-direction: column-reverse;
-    align-items: center;
-    gap: 10px;
-    padding: 6px 0 0;
+    padding-top: 8px;
+    margin: 8px auto 8px auto;
+    flex: 1;
+    height: 76vh;
+    gap: 6px;
+    /* height: auto; */
+    /* overflow: hidden; */
   }
 
   .player-section {
-    width: 94%;
+    width: 92%;
     margin: 4px 0;
-    padding: 6px;
-    border: 3px solid black;
+    padding: 7px;
+    height: 32vh;
+    min-height: auto;
   }
 
   .player {
-    font-size: 0.95rem;
-    margin-bottom: 6px;
+    font-size: 0.9rem;
+    margin-bottom: 14px;
   }
 
   .score {
-    font-size: .75rem;
-    margin: 4px 0 0;
+    font-size: 0.7rem;
+    margin: 5px 0 0 0;
   }
 
   .player-information {
     flex-direction: column;
     align-items: center;
-    gap: 4px;
+    gap: 8px;
   }
 
   .logo {
@@ -310,34 +303,35 @@ body {
   }
 
   .game-selection {
-    width: 70px;
-    height: 70px;
-    margin: 5px 10px;
+    width: 75px;
+    height: 75px;
+    margin: 7px 10px;
     padding: 5px;
   }
 
   .game-selectiontext {
-    font-size: .5rem;
+    font-size: 0.5rem;
     margin-top: 4px;
   }
 
   .score-board {
-    height: auto;
+    height: 11vh;
+    /* height: auto; */
     font-size: 1rem;
-    padding: 6px 0;
+    padding: 8px 0;
     text-align: center;
   }
 
   #result {
-    font-size: 1.05rem;
-    padding-top: 4px 0 ;
+    font-size: 1rem;
+    padding: 16px 0;
     text-align: center;
   }
 
   .modal {
     font-size: 0.8rem;
-    padding: 14px 10px;
-    width: 92%;
+    padding: 16px 10px;
+    width: 90%;
   }
 
   #modalBtn {
