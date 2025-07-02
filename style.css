@@ -237,13 +237,11 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    /* overflow: hidden; */
   }
 
   .header {
     padding: 25px 3px;
     height: 10vh;
-    /* height: auto; */
   }
 
   .title {
@@ -259,15 +257,13 @@ body {
     flex: 1;
     height: 76vh;
     gap: 6px;
-    /* height: auto; */
-    /* overflow: hidden; */
   }
 
   .player-section {
     width: 92%;
     margin: 4px 0;
     padding: 7px;
-    height: 32vh;
+    height: 35vh;
     min-height: auto;
   }
 
@@ -316,7 +312,6 @@ body {
 
   .score-board {
     height: 11vh;
-    /* height: auto; */
     font-size: 1rem;
     padding: 8px 0;
     text-align: center;
