@@ -36,19 +36,19 @@
         </div>
         <div class="content-box">
           <div class="game-selections">
-            <div class="game-selection" id="rock">
+            <div class="game-selection" data-choice="rock">
               <p class="game-selectiontext">Rock</p>
               <img src="./images/rock.png" alt="" class="selection" id="rock">
             </div>
           </div>
           <div class="game-selections">
-            <div class="game-selection" id="papper">
+            <div class="game-selection" data-choice="paper">
               <p class="game-selectiontext">Paper</p>
               <img src="./images/paper.png" alt="" class="selection" id="paper">
             </div>
           </div>
           <div class="game-selections">
-            <div class="game-selection" id="scissor">
+            <div class="game-selection" data-choice="scissor">
               <p class="game-selectiontext">Scissor</p>
               <img src="./images/scissor.png" alt="" class="selection" id="scissor">
             </div>
@@ -100,7 +100,7 @@
     </div>
   </section>
   <div class="modal" id="gameModal">
-   <p class="modal-title" id="modalMsg">Rock Paper Scissors</p>
+   <p class="modal-title" id="modalMsg"></p>
    <button class="btn" id="modalBtn">Start Game</button>
   </div>
   <div class="overlay" id="overlay"></div>
